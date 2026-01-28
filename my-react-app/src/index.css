@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #100f0f;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* RESET (important) */
+body {
+  margin: 0;
+}
+
+/* NAVBAR WRAPPER */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;              /* full viewport width */
+  height: 70px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* centers inner container */
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 2px 12px rgba(255, 0, 0, 0.25);
+}
+
+/* INNER CONTAINER (this fixes alignment) */
+.navbar-content {
+  width: 100%;
+  max-width: 1200px;        /* professional constraint */
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #e50914;
+}
+
+/* LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+  background: #e50914;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.home {
+  height: 100vh;
+  padding-top: 140px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 60px;
+  color: #e50914;
+}
+
+.home p {
+  max-width: 650px;
+  margin: 20px auto;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.home button {
+  padding: 12px 30px;
+  background: #e50914;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.home button:hover {
+  background: #b20710;
+  color: white;
+}
+
+.section {
+  padding: 100px 70px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #e50914;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 28px;
+  width: 260px;
+  text-align: left;
+  border-left: 3px solid #e50914;
+  
+}
+
+.card h3 {
+  margin-bottom: 12px;
+}
+.cards1 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  font-size: 20px;
+ 
+}
+.watch button {
+  padding: 10px 30px;
+  background: #e50914;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.watch button:hover {
+  background: #b20710;
+  color: white;
+}
+.watch {
+  padding: 100px 70px;
+  text-align: center;
+}
+
+.watch h2 {
+  color: #e50914;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
